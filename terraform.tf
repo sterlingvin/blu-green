@@ -14,5 +14,12 @@ terraform {
     }
   }
 
-  required_version = "~> 1.3.0"
+  # required_version = "~> 1.5.0"
+
+   cloud {
+    organization = "tutorial_007"
+    workspaces {
+      name = "learn-terraform-aws"
+    }
+  }
 }
